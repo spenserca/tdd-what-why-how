@@ -1,6 +1,6 @@
-package com.spenserca.demo;
+package com.spenserca.demo.services;
 
-public class SomethingToMock {
+public class SomethingToMockService {
     public void doSomething(Object o) {
         System.out.println("o.toString: " + o.toString());
     }

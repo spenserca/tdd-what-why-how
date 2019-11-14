@@ -1,4 +1,4 @@
-package com.spenserca.demo;
+package com.spenserca.demo.models;
 
 public class Animal {
     private String name;
