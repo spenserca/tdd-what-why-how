@@ -13,7 +13,7 @@ public class LooperService {
 
     public List<Animal> loopAnimals(List<Animal> animals) {
         animals.forEach((animal -> {
-            somethingToMockService.doSomething(animal);
+            somethingToMockService.logAnimal(animal);
         }));
 
         return animals;

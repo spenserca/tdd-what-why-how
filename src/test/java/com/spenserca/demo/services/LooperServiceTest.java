@@ -32,7 +32,7 @@ public class LooperServiceTest {
         underTest.loopAnimals(expectedAnimals);
 
         expectedAnimals.forEach((expectedAnimal -> {
-            verify(somethingToMockService).doSomething(expectedAnimal);
+            verify(somethingToMockService).logAnimal(expectedAnimal);
         }));
     }
 

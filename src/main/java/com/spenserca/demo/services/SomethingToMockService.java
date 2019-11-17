@@ -1,7 +1,13 @@
 package com.spenserca.demo.services;
 
+import com.spenserca.demo.models.Animal;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class SomethingToMockService {
-    public void doSomething(Object o) {
-        System.out.println("o.toString: " + o.toString());
+    private static final Logger logger = LoggerFactory.getLogger(SomethingToMockService.class);
+
+    public void logAnimal(Animal animal) {
+        logger.info(animal.toString());
     }
 }
