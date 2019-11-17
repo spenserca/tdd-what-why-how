@@ -11,7 +11,11 @@ public class LooperService {
         this.somethingToMockService = somethingToMockService;
     }
 
-    public List<Animal> loopAllAnimals(List<Animal> animals) {
-        return null;
+    public List<Animal> loopAnimals(List<Animal> animals) {
+        animals.forEach((animal -> {
+            somethingToMockService.doSomething(animal);
+        }));
+
+        return animals;
     }
 }
