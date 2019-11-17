@@ -14,4 +14,9 @@ public class Animal {
         this.description = description;
         this.funFact = funFact;
     }
+
+    @Override
+    public String toString() {
+        return "I'm a " + name + ".";
+    }
 }
